@@ -1,9 +1,8 @@
-var Wins = 0;
+var Wins = 0 ;
 var Losses = 0;
 var GuessesLeft;
 var Guessessofar;
 var Computerchoice;
-var Userguess = 0;
 var Letters = ['a', 'b','c','d','e', 'f','g','h','i', 'j','k','l','m', 'n','o','p','q', 'r','s','t','u', 'v','w','x','y','z']
 
 reset();
@@ -27,14 +26,14 @@ function display(){
     var lossesP = document.getElementById("losses");
     var numguesses = document.getElementById("numguesses");
     var userguesses = document.getElementById("userguesses");
-    winsP.innerHTML = wins;
-    lossesP.innerHTML = losses;
+    winsP.innerHTML = Wins;
+    lossesP.innerHTML = Losses;
     numguesses.innerHTML = GuessesLeft;
     userguesses.innerHTML = Guessessofar.join(',');
 
     }
 function win(){
-    wins ++;
+    Wins ++;
     reset();
 }
  function Lose(){
