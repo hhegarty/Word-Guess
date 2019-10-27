@@ -5,33 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Psychic Game</title>
-    <script src="game.js">
-    
-    var Wins = 0;
-    var Losses = 0;
-    var GuessesLeft = 9;
-    var Guessessofar = 0;
-    var Computerchoice = 0;
-    var Userguess = 0;
-    
-
-        if (Computerchoice === Userguess){
-
-        }
-
-
-    
-    </script>
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel ="stylesheet" type = "text/css" href="Assets/Css/style.css">
+    </head>
 <body>
-<!--Remember to match id's to javascript-->    
+   
  <div id="Psychic">
      <h1>The Psychic Game</h1>
      <p>Guess what letter I'm thinking of!</p>
-     <p>Losses:</p>
-     <p>Guesses Left:</p>
-     <p>Guesses so far:</p>
-     <p>Wins:</p>
+     <p>Losses:<p id="losses">Losses:</p></p>
+     <p>Number of guesses left:<p id="numguesses">Guesses Left:</p></p>
+     <p>Guesses:<p id="userguesses">Guesses so far:</p></p>
+     <p>Wins:<p id="wins">Wins:</p></p>
  </div>   
 
  
@@ -52,8 +37,6 @@ When player wins, increase the Wins counter and start game over again (w/o refre
 When player loses, increase the Losses counter and restart the game w/o refreshing page<!-->
 
 
-
-
-
+<script src="Assets/Javascript/game.js"></script>
 </body>
 </html>
