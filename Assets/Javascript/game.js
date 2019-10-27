@@ -22,3 +22,32 @@ document.onkeyup = function(event){
         }
         display();
 }
+function display(){
+    var winsP = document.getElementById("wins");
+    var lossesP = document.getElementById("losses");
+    var numguesses = document.getElementById("numguesses");
+    var userguesses = document.getElementById("userguesses");
+    winsP.innerHTML = wins;
+    lossesP.innerHTML = losses;
+    numguesses.innerHTML = GuessesLeft;
+    userguesses.innerHTML = Guessessofar.join(',');
+
+    }
+function win(){
+    wins ++;
+    reset();
+}
+ function Lose(){
+     Losses ++;
+     reset();
+ }
+function fail(letter){
+    GuessesLeft --;
+    Guessessofar.push(letter);
+    }
+function reset(){
+    GuessesLeft = 9;
+    Guessessofar = [];
+    Computerchoice = Letters[Math.floor(Math.random() * Letters.length)];
+    console.log ("letter to guess: " + Computerchoice);
+}
